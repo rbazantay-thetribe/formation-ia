@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pydantic
+langchain
+langchain-community
+qdrant-client
+sentence-transformers
+langchain-ollama

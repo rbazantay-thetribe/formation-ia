@@ -1,0 +1,9 @@
+/qdrant_data
+/ollama_data
+/api/venv
+/api/__pycache__
+/api/app.pyc
+/api/app.pyo
+/api/app.pyd
+/api/app.pyw
+/api/app.pyz
