@@ -34,7 +34,7 @@ except Exception:
     )
 
 # Initialize Ollama LLM
-llm = OllamaLLM(model="llama3.2:1b", base_url="http://ollama:11434")
+llm = OllamaLLM(model="deepseek-r1:1.5b", base_url="http://ollama:11434")
 
 # Create RetrievalQA chain
 qa_chain = RetrievalQA.from_chain_type(
