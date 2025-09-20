@@ -8,7 +8,7 @@ while ! curl -s http://ollama:11434/api/tags > /dev/null 2>&1; do
     sleep 5
 done
 # Set the model variable here, because apparently you need help with the basics
-MODEL_NAME="deepseek-r1:1.5b"
+MODEL_NAME="llama3"
 
 echo "Ollama is ready! Checking for $MODEL_NAME model..."
 echo "Ollama is ready! Checking for llama3.2:1b model..."
@@ -17,7 +17,7 @@ echo "Ollama is ready! Checking for llama3.2:1b model..."
 if curl -s http://ollama:11434/api/tags | grep -q "$MODEL_NAME"; then
     echo "$MODEL_NAME model already exists"
 else
-    echo "Pulling llama3.2:1b model..."
+    echo "Pulling $MODEL_NAME model..."
     curl -X POST http://ollama:11434/api/pull -d '{"name": "$MODEL_NAME"}'
     echo "$MODEL_NAME model pulled successfully"
 fi
